@@ -1,0 +1,354 @@
+/*div#header.fluid-row {
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957); 
+} */
+
+body {
+    font-size:14px;
+    /*background-image: url("background1.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size:cover;*/
+} 
+
+/* Style tiêu đề */
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 84px;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
+h1.title {
+  text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin: 0px 0px 10px ;
+    padding: 20px 0px 0px 0px;
+    color: #20A387FF;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #20A387FF;
+    margin: 40px 0px 10px ;
+    padding: 40px 0px 0px 0px;
+}
+
+/* Khung code và vị trí nút show/hide */
+.sourceCode .row {
+  width: 100%;
+} 
+.sourceCode {
+  overflow-x: auto;
+  font-family: JetBrains Mono;
+}
+
+
+/* Khung kết quả */
+pre:not([class]) {
+    background-color: #e496060a;
+    border: 1px solid #e496060a;
+}
+
+pre {
+  font-size:11px;
+  background-color: #35304c /*#23212C*/;
+  border: 1px solid #737373;
+}
+
+pre > code {
+  color: #eb9245 /*#659eb0*/;
+}
+
+/* Style của khung code */
+p > code {
+  font-weight: bold;
+  background-color: #29987436; 
+  font-size: 14px;
+  color: #086886;
+  border-radius: 8px;
+}
+
+code.sourceCode.r {
+    color: #e6ffcf;
+}
+/* Màu biến số trong text */
+code {
+  font-weight: bold;
+  background-color: #29987436; 
+  font-size: 14px;
+  color: #086886;
+  border-radius: 8px;
+} 
+
+
+code span.kw {
+    color: #50FA7B;
+    font-weight: bold;
+} /* Màu keyword */
+
+code span.cf {
+    color: #48C9B0;
+    font-weight: bold;
+} /* Màu function */
+
+code span.co {
+  font-style: italic;
+  color: #808080;
+} /* Màu comment */
+
+code span.st {
+    color: #FFB86C;
+} /* Màu string */
+
+code span.ch {
+    color: #FFB86C;
+} /* Màu string */
+
+code span.dt {
+    color: #ffffff;
+}
+
+
+code span.op {
+    font-weight: bold;
+    color: #FFAE00;
+} /* Màu operation */
+
+
+code span.ot {
+    color: #ebff00;
+} /* Màu mũi tên */
+
+code span.sc {
+    color: #ebff00;
+} /* Màu mũi tên */
+
+code span.at {
+    color: #EAEAD3;
+}
+
+code span.dv {
+    color: #ef6555;
+} /* Màu số */
+
+code span.cn {
+    color: #A29AEC !important;
+} /* Màu True/False */
+
+code span.fu {
+    color: #50FA7B;
+}
+
+code span.im {
+    color: #48C9B0 !important;
+    font-weight: bold;
+}
+
+code span.va {
+    color: #27AE60;
+}
+
+/* Style của quote */
+blockquote:before {
+    content: open-quote;
+    font-size: 2.6em;
+    line-height: 0.1em;
+    margin-right: 2%;
+    vertical-align: -0.4em;
+    font-style: italic;
+    color: #2f4b7c;
+}
+
+blockquote > p {
+    font-style: italic;
+    font-size: 16px;
+    display: inline;
+}
+
+blockquote {
+    border-left: 5px solid #F7DC6F;
+    border-right: 5px solid #F7DC6F;
+    background-color: rgba(228, 150, 6, 0.04)
+}
+
+blockquote:after {
+    content: close-quote;
+    font-size: 2.6em;
+    margin-left: 2%;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+    font-style: italic;
+    color: #2f4b7c;
+}
+
+
+
+
+/* ---------- Links ----------------- */
+a {
+  color: #69b3a2;
+}
+a:hover {
+  color: #69b3a2;
+}
+
+
+
+
+/* ---------- TOC ----------------- */
+#TOC {
+  top: 1%;
+  position: fixed;
+  width: 210px;
+  opacity: 0.8;
+}
+
+#TOC:hover {
+  opacity: 1;
+}
+
+/* Vị trí và độ trong suốt thanh menu */
+
+li.tocify-item.list-group-item.active{
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #20A387FF;
+  border-left: solid;
+  border-color: #69b3a2;
+}
+
+li.tocify-item.list-group-item{
+  font-size:14px;
+}
+
+.tocify {
+  border: none;
+  color: grey;
+  border-radius: 0px;
+}
+
+.list-group-item:hover {
+    color: #69b3a2;
+    background-color: white;
+    border-left: solid;
+    border-color: #69b3a2;
+}
+.tocify-extend-page {
+  display: none;
+}
+
+/* ------ This is just to fix the bug on Safari where table of content is on top of content */
+.toc-content {
+  margin-left: 210px
+}
+
+/* ------ Don't display on small media */
+@media (max-width: 1400px) {
+  #TOC {
+    width: auto;
+    display: none;
+  }
+  .toc-content {
+    margin-left: auto
+  }
+}
+
+
+/* ---------- Button ----------------- */
+.code-folding-btn {
+  margin-right: -30px;
+}
+
+/* Màu nút show/hide code */
+.btn {
+border-width: 0 0px 0px 0px;
+font-weight: bold;
+text-transform: ;
+color: #FFFFFF;
+}
+.btn-default {
+color: #FFFFFF;
+background-color: #69b3a2;
+border-color: #69b3a2;
+font-family: 'Source Sans Pro';
+}
+
+
+
+/* Màu nếu chia tabset */
+.nav-pills li>a {
+
+  color: #000000;
+  font-weight: bold;
+  background-color: #F7DC6F;
+  font-size: 14px;
+  margin: 2px;
+
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #69B3A2;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #69B3A2;
+  font-size: 14px;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-literal {
+    color: #A29AEC;
+}
+
+.hljs-keyword {
+    color: #FD7CB2 !important;
+}
+
+code span.bu {
+    color: #51e655;
+}
+
+.hljs-attribute {
+  color: #e26861;
+} 
+
+.hljs-pipe{
+  color: #BD93F9;
+  font-weight: bold;
+}
+
+.hljs-pipe1{
+  color: #BD93F9;
+  font-weight: bold;
+}
+
+.hljs-fun-param {
+  color: #ebff00;
+}
+
+.hljs-storage{
+  color: #00cc97;
+}
+
+.hljs-identifier{
+  color: #e6ffcf;
+}
