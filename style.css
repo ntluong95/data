@@ -235,7 +235,7 @@ a:hover {
 /* Vị trí và độ trong suốt thanh menu */
 
 li.tocify-item.list-group-item.active{
-  border-radius: 25px;
+  border-radius: 10px;
   color: #FFFFFF;
   font-weight: bold;
   background-color: #20A387FF;
