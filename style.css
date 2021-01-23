@@ -72,7 +72,7 @@ pre {
 }
 
 pre > code {
-  color: #eb9245 /*#659eb0*/;
+  color: #0f80ac /*#659eb0 #eb9245*/;
 }
 
 /* Style của khung code */
