@@ -87,6 +87,15 @@ p > code {
 code.sourceCode.r {
     color: #e6ffcf;
 }
+
+code.sourceCode.python {
+    color: #e6ffcf;
+}
+
+code.sourceCode.stata {
+    color: #e6ffcf;
+}
+
 /* Màu biến số trong text */
 code {
   font-weight: bold;
@@ -349,6 +358,18 @@ code span.bu {
   color: #00cc97;
 }
 
+.hljs-storage1{
+  color: #50FA7B;
+}
+
 .hljs-identifier{
   color: #e6ffcf;
+}
+
+.hljs-function1 {
+  color: #50FA7B;
+}
+
+code span.fl {
+  color: #ef6555 !important;
 }
