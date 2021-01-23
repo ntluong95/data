@@ -1923,7 +1923,7 @@
         {cN:"fun-param",b:"//=|\\*\\*=|>>=|<<=|//|\\*\\*|==|!=|>=|<=|:=|>>|<<|\\+=|-=|\\*=|/=|&=|%=|\\|=|\\^=|\\+|-|\\*|/|%|>|<|\\^|~|\\||&|=|:|\\.|;|,",r:0},
         {cN:"assign",b:" <- ",r:0},
         {cN:"keyword",b:"([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*::",r:0},
-  //      {cN:"dplyr",b:"tibble|mutate|select|filter|summari[sz]e|arrange|group_by",e:"[a-zA-Z0-9._]*",r:0},
+  //    {cN:"dplyr",b:"tibble|mutate|select|filter|summari[sz]e|arrange|group_by",e:"[a-zA-Z0-9._]*",r:0},
         {b:r,l:r, k:
           {keyword:"function if in break next repeat else for return switch while try tryCatch stop warning require library attach detach source setMethod setGeneric setGroupGeneric setClass ...",
           literal:"NULL NA TRUE FALSE T F Inf NaN NA_integer_|10 NA_real_|10 NA_character_|10 NA_complex_|10"},
@@ -1942,6 +1942,7 @@
     var r="([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*";
     return{
       c:[e.HCM,
+        {cN:"function1",b:"\\.([a-zA-Z_][\\w-]*)\\b",r:0},
         {cN:"pipe1",b:">>=",r:0},
         {cN:"pipe",b:">>",r:0},
         {cN:"fun-param",b:"//=|\\*\\*=|>>=|<<=|//|\\*\\*|==|!=|>=|<=|:=|>>|<<|\\+=|-=|\\*=|/=|&=|%=|\\|=|\\^=|\\+|-|\\*|/|%|>|<|\\^|~|\\||&|=|:|\\.|;|,",r:0},
@@ -1954,8 +1955,16 @@
         {cN:"number",b:"\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",r:0},
         {cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",r:0},
         {b:"`",e:"`",r:0},
-        {cN:"keyword",b:"False|None|True|and|as|assert|async|await|break|class|continue|def|del|elif|else|except|finally|for|from|global|if|import| in| is|lambda|nonlocal|not|or|pass|raise|return|try|while|with|yield",r:0},
-        {cN:"identifier",b:"[a-zA-Z]",r:0}
+        {cN:"keyword",b:"False|None|True|and|as|assert|async|await|break|class|continue|def|del |elif|else|except|finally|for|from |global|if|import | in| is|lambda|nonlocal|not|or |pass|raise|return|try|while|with|yield",r:0}
+      ]
+    }
+  })
+, e.registerLanguage("stata", 
+    function(e){
+    var r="([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*";
+    return{
+      c:[e.HCM,
+        {cN:"storage1",b:"co | value ", r:0}
       ]
     }
   })
