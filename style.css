@@ -75,6 +75,11 @@ pre > code {
   color: #0f80ac /*#659eb0 #eb9245*/;
 }
 
+p {
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
 /* Style của khung code */
 p > code {
   font-weight: bold;
