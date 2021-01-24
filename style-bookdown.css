@@ -1,0 +1,254 @@
+.book .book-summary {
+    background-color: #20263e;
+}
+
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+    color: #4aa9f7;
+    white-space: pre-wrap;
+}
+
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
+    color: white;
+    background: #39a952;
+    text-decoration: none;
+}
+.book .book-body {
+    background: rgb(28, 31, 43);
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre {
+    overflow: auto;
+    word-wrap: normal;
+    margin: 0 0 1.275em;
+    padding: .85em 1em;
+    background: #2d3143;
+}
+
+.book .book-summary ul.summary li.divider {
+    height: 1px;
+    margin: 7px 0;
+    overflow: hidden;
+    background: #008cff;
+}
+
+.book .book-header.fixed {
+    background-color: rgb(28, 31, 43) !important;
+    border-color: #008cff;
+}
+
+.book .book-header h1 a, .book .book-header h1 a:hover {
+    color: #008cff;
+}
+
+.book .book-header .btn {
+    color: #008cff;
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+    color: #008cff;
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+    color: #008cff;
+}
+
+.book .book-body .page-wrapper .page-inner section {
+    background: rgb(28, 31, 43);
+}
+
+.book .book-body .page-wrapper .page-inner section.normal {
+    color: #fff;
+    text-align: justify;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code {
+    padding: .2em;
+    margin: 0;
+    font-size: .85em;
+    background-color: #cb6b6b;
+    color: #eaead3;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre, .book .book-body .page-wrapper .page-inner section.normal code {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'JetBrains Mono';
+}
+
+
+
+
+
+.book .book-body .page-wrapper .page-inner section.normal table td, .book .book-body .page-wrapper .page-inner section.normal table th {
+    color: black;
+}
+
+b, strong {
+    font-weight: 700;
+    color: #8afa5f;
+}
+
+em, italic {
+    color: #8afa5f;
+}
+
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+p.caption {
+    color: white;
+    margin-top: 10px;
+}
+
+
+code span.kw {
+    color: #50FA7B;
+    font-weight: normal;
+} /* Màu keyword */
+
+code span.cf {
+    color: #48C9B0;
+    font-weight: bold;
+} /* Màu function */
+
+code span.co {
+  font-style: italic;
+  color: #808080;
+} /* Màu comment */
+
+code span.st {
+    color: #FFB86C;
+} /* Màu string */
+
+code span.ch {
+    color: #FFB86C;
+} /* Màu string */
+
+code span.dt {
+    color: #ffffff;
+}
+
+
+code span.op {
+    font-weight: bold;
+    color: #FFAE00;
+} /* Màu operation */
+
+
+code span.ot {
+    color: #ebff00;
+} /* Màu mũi tên */
+
+code span.sc {
+    color: #ebff00;
+} /* Màu mũi tên */
+
+code span.at {
+    color: #EAEAD3;
+}
+
+code span.dv {
+    color: #ef6555;
+} /* Màu số */
+
+code span.cn {
+    color: #A29AEC !important;
+} /* Màu True/False */
+
+code span.fu {
+    color: #50FA7B;
+}
+
+code span.im {
+    color: #48C9B0 !important;
+    font-weight: bold;
+}
+
+code span.va {
+    color: #27AE60;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-literal {
+    color: #A29AEC;
+}
+
+.hljs-keyword {
+    color: #FD7CB2 !important;
+}
+
+code span.bu {
+    color: #51e655;
+}
+
+.hljs-attribute {
+  color: #e26861;
+} 
+
+.hljs-pipe{
+  color: #BD93F9;
+  font-weight: bold;
+}
+
+.hljs-pipe1{
+  color: #BD93F9;
+  font-weight: bold;
+}
+
+.hljs-fun-param {
+  color: #ebff00;
+}
+
+.hljs-storage{
+  color: #00cc97;
+}
+
+.hljs-storage1{
+  color: #50FA7B;
+}
+
+.hljs-identifier{
+  color: #e6ffcf;
+}
+
+.hljs-function1 {
+  color: #50FA7B;
+}
+
+code span.fl {
+  color: #ef6555 !important;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6 {
+    color: #008cff;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+    color: #8afa5f;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs, .book .book-body .page-wrapper .page-inner section.normal code .hljs {
+    background: #2d3143;
+    color: #e6ffcf;
+    padding: 0.5em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, .book .book-body .page-wrapper .page-inner section.normal code .hljs-string, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, .book .book-body .page-wrapper .page-inner section.normal code .hljs-value, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-inheritance, .book .book-body .page-wrapper .page-inner section.normal code .hljs-inheritance, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-header, .book .book-body .page-wrapper .page-inner section.normal code .hljs-header, .book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-symbol, .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol, .book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, .book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
+    color: #ffb86c;
+}
