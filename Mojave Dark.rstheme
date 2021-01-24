@@ -1775,7 +1775,7 @@ span.ace_paren.ace_keyword.ace_operator {
     border: 1px solid #a5a1a1;
 }
 
-.GCHYANPCKRB td.GCHYANPCKRB {
+.GCHYANPCLRB td.GCHYANPCKLB {
     background-color: rgb(55,57,58);
     vertical-align: top;
     padding: 0;
@@ -1936,7 +1936,7 @@ select {
     border: none !important;
 }
 
-.GCHYANPCM0B {
+.GCHYANPCN0B {
     outline: none;
     border: none;
     white-space: pre-wrap !important;
@@ -1987,7 +1987,7 @@ select {
     color: black;
 }
 
-.GCHYANPCKRB .GCHYANPCIRB {
+.GCHYANPCLRB .GCHYANPCJRB {
     padding: 5px 5px 0 5px;
     color: white;
 }
@@ -1997,12 +1997,13 @@ select {
   font-weight: bold;
 }
 
-.rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCB4B, .rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCP3B, .rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCG4B, .rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCD4B, .rstudio-themes-flat .rstudio-themes-dark-grey .GCHYANPCO3B, .rstudio-themes-flat .rstudio-themes-dark-grey .GCHYANPCJ3B {
+.rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCC4B, .rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCA4B, .rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCH4B, .rstudio-themes-flat .rstudio-themes-dark-grey td.GCHYANPCE4B, .rstudio-themes-flat .rstudio-themes-dark-grey .GCHYANPCP3B, .rstudio-themes-flat .rstudio-themes-dark-grey .GCHYANPCK3B {
     border-color: rgb(36, 47, 41);
-    color: rgb(144, 195, 154);
+    color: rgb(93, 220, 118);
+    font-weight: bold
 }
 
-.rstudio-themes-flat td.GCHYANPCG4B {
+.rstudio-themes-flat td.GCHYANPCH4B {
     background-color: inherit;
     color: rgb(206, 151, 81) !important;
 }
@@ -2024,7 +2025,7 @@ select {
 }
 
 .GD15MCFCFK.gwt-Label, .gwt-TabLayoutPanelContentContainer td {
-    color: #b9b989;
+    color: #eaeaa1;
     font-weight: normal;
 }
 
@@ -2088,7 +2089,7 @@ select {
   background-color: rgb(53,53,53) !important;
 }
 
-.GCHYANPCE1B {
+.GCHYANPCG1B {
   background-color: rgb(82, 79, 79) !important;
   font-size: 11px;
 }
@@ -2310,4 +2311,8 @@ select {
 
 .GCHYANPCMO {
     opacity: 1;
+}
+
+.GCHYANPCG0B .GCHYANPCE1B {
+  color: #ffe400;
 }
