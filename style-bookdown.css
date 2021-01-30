@@ -1,5 +1,5 @@
 .book .book-summary {
-    background-color: #20263e;
+    background-color: #1f212c /*#20263e*/;
 }
 
 .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
@@ -9,7 +9,7 @@
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
     color: white;
-    background: #39a952;
+    background: #6f283e;
     text-decoration: none;
 }
 .book .book-body {
@@ -88,7 +88,7 @@
 
 b, strong {
     font-weight: 700;
-    color: #8afa5f;
+    color: #dab313;
 }
 
 em, italic {
@@ -231,12 +231,20 @@ code span.bu {
   color: #50FA7B;
 }
 
+.hljs-selector-class {
+  color: #8e908c;
+}
+
+.hljs-selector-tag {
+color: #8e908c;
+}
+
 code span.fl {
   color: #ef6555 !important;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6 {
-    color: #008cff;
+    color: #bf3962;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a {
@@ -251,4 +259,9 @@ code span.fl {
 
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, .book .book-body .page-wrapper .page-inner section.normal code .hljs-string, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, .book .book-body .page-wrapper .page-inner section.normal code .hljs-value, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-inheritance, .book .book-body .page-wrapper .page-inner section.normal code .hljs-inheritance, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-header, .book .book-body .page-wrapper .page-inner section.normal code .hljs-header, .book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-symbol, .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol, .book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, .book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
     color: #ffb86c;
+}
+
+a {
+    text-decoration: none;
+    color: #57dfc0 !important;
 }
