@@ -185,6 +185,10 @@ code span.va {
     color: #27AE60;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-comment, .book .book-body .page-wrapper .page-inner section.normal code .hljs-comment, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-title, .book .book-body .page-wrapper .page-inner section.normal code .hljs-title {
+    color: #e6ffcf;
+}
+
 .hljs-keyword, .hljs-selector-tag, .hljs-literal {
     color: #A29AEC;
 }
