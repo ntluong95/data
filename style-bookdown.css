@@ -189,6 +189,7 @@ code span.va {
     color: #e6ffcf;
 }
 
+
 .hljs-keyword, .hljs-selector-tag, .hljs-literal {
     color: #A29AEC;
 }
@@ -233,6 +234,18 @@ code span.bu {
 
 .hljs-function1 {
   color: #50FA7B;
+}
+
+.hljs-selector-tag {
+    color: #e6ffcf;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-number, .book .book-body .page-wrapper .page-inner section.normal code .hljs-number, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-preprocessor, .book .book-body .page-wrapper .page-inner section.normal code .hljs-preprocessor, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-pragma, .book .book-body .page-wrapper .page-inner section.normal code .hljs-pragma, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-built_in, .book .book-body .page-wrapper .page-inner section.normal code .hljs-built_in, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-literal, .book .book-body .page-wrapper .page-inner section.normal code .hljs-literal, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-params, .book .book-body .page-wrapper .page-inner section.normal code .hljs-params, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-constant, .book .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
+    color: #e6ffcf;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-function, .book .book-body .page-wrapper .page-inner section.normal code .hljs-function, .book .book-body .page-wrapper .page-inner section.normal pre .python .hljs-decorator, .book .book-body .page-wrapper .page-inner section.normal code .python .hljs-decorator, .book .book-body .page-wrapper .page-inner section.normal pre .python .hljs-title, .book .book-body .page-wrapper .page-inner section.normal code .python .hljs-title, .book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-function .hljs-title, .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-function .hljs-title, .book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-title .hljs-keyword, .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-title .hljs-keyword, .book .book-body .page-wrapper .page-inner section.normal pre .perl .hljs-sub, .book .book-body .page-wrapper .page-inner section.normal code .perl .hljs-sub, .book .book-body .page-wrapper .page-inner section.normal pre .javascript .hljs-title, .book .book-body .page-wrapper .page-inner section.normal code .javascript .hljs-title, .book .book-body .page-wrapper .page-inner section.normal pre .coffeescript .hljs-title, .book .book-body .page-wrapper .page-inner section.normal code .coffeescript .hljs-title {
+    color: #e6ffcf;
 }
 
 code span.fl {
