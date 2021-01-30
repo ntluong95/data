@@ -2615,7 +2615,7 @@ define("mode/python_highlight_rules", ["require", "exports", "module"], function
                 regex: "X."
             },{
                 token: "storage",
-                regex: "pd|pandas|plt|matplotlib.pyplot|np|numpy|sns|seaborn|dfply|scipy.special|bokeh.plotting|scipy.integrate|odeint|ode|solve_bvp|sklearn.linear_model|LinearRegression|LogisticRegression|sklearn.model_selection|GridSearchCV|cross_val_score|sklearn.cluster|sklearn.metrics|KMeans|sklearn|svm|classification_report|confusion_matrix|accuracy_score|train_test_split|group_by|head|tail|select|drop|row_slice|mutate|transmute|arrange|rename|gather|spread|separate|unite|summarize|summarize_each|mean|var|sd|median|IQR|show|figure|output_file"
+                regex: "pd|pandas|plt|matplotlib.pyplot|np|numpy|sns|seaborn|dfply|scipy.special|bokeh.plotting|scipy.integrate|odeint|ode|solve_bvp|sklearn.linear_model|LinearRegression|LogisticRegression|sklearn.model_selection|GridSearchCV|cross_val_score|sklearn.cluster|sklearn.metrics|KMeans|sklearn|svm|classification_report|confusion_matrix|accuracy_score|train_test_split|group_by|head|tail|select|drop|row_slice|mutate|transmute|arrange|rename|gather|spread|separate|unite|summarize|summarize_each|mean|var|sd|median|IQR|show|figure|output_file|siuba"
             },{
                 token: ["punctuation", "function.support"],
                 regex: "(\\.)([a-zA-Z_]+)\\b"
