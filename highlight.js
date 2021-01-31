@@ -1920,6 +1920,7 @@
     return{
       c:[e.HCM,
         {cN:"pipe",b:"%.*?%",r:0},
+        {cN:"pipe1",b:"\\|>",r:0},
         {cN:"fun-param",b:"//=|\\*\\*=|>>=|<<=|//|\\*\\*|==|!=|>=|<=|:=|>>|<<|\\+=|-=|\\*=|/=|&=|%=|\\|=|\\^=|\\+|-|\\*|/|%|>|<|\\^|~|\\||&|=|:|\\.|;|,",r:0},
         {cN:"assign",b:" <- ",r:0},
         {cN:"keyword",b:"([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*::",r:0},
@@ -1964,7 +1965,7 @@
     var r="([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*";
     return{
       c:[e.HCM,
-        {cN:"storage1",b:"co | value ", r:0}
+        {cN:"storage1",b:"co | value |def |define |val |variable ", r:0}
       ]
     }
   })
