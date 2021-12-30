@@ -1,1 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2021-12-30T15:05:20.568Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62" version="15.9.1" etag="_SzKqTDYGqoYNlvI244V" type="github"><diagram id="has9TdIjUB-M5tp68RFS">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-30T15:25:24.746Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62" etag="NV31HL3beXn57b0wWoJv" version="15.9.1" type="github">
+  <diagram id="has9TdIjUB-M5tp68RFS" name="Page-1">
+    <mxGraphModel dx="1006" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-1" value="State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-2" value="AMU" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-3" value="Societal factors:&lt;br&gt;overcrowded,&lt;br&gt;consumption,&lt;br&gt;contact" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="470" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NvyDaJcWV0cG_j8raeiO-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-4" value="Individual determinant" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="NvyDaJcWV0cG_j8raeiO-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="830" as="sourcePoint" />
+            <mxPoint x="500" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NvyDaJcWV0cG_j8raeiO-8" target="NvyDaJcWV0cG_j8raeiO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-8" value="Poor control on sale" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="560" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NvyDaJcWV0cG_j8raeiO-9" target="NvyDaJcWV0cG_j8raeiO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-9" value="Infection rate" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NvyDaJcWV0cG_j8raeiO-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NvyDaJcWV0cG_j8raeiO-12" target="NvyDaJcWV0cG_j8raeiO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-12" value="WASH" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="700" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NvyDaJcWV0cG_j8raeiO-13" target="NvyDaJcWV0cG_j8raeiO-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-13" value="Social economic development" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="700" y="560" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvyDaJcWV0cG_j8raeiO-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="NvyDaJcWV0cG_j8raeiO-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="830" as="sourcePoint" />
+            <mxPoint x="560.0042712474622" y="941.7157287525379" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
