@@ -1,0 +1,991 @@
+{
+  //------------------------------------- Workbench settings
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "update.positron.channel": "dailies",
+  "explorer.sortOrder": "default",
+  "positron.environments.enable": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/ngulu864/custom-vscode.css",
+    "file:///C:/Users/ngulu864/vscode-script.js"
+  ],
+  "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.colorCustomizations": {
+    "[One Dark Pro Flat]": {
+      "foreground": "#32b8c9",
+      "disabledForeground": "#2f7883",
+      "breadcrumb.foreground": "#B877DB",
+      "button.background": "#1265c9",
+      "statusBar.background": "#0C755D",
+      "statusBar.foreground": "#fff",
+      "statusBarItem.remoteBackground": "#d91717",
+      "menu.selectionBackground": "#06756d",
+      "titleBar.activeForeground": "#fff",
+      "toolbar.hoverBackground": "#06756d",
+      "checkbox.background": "#2f7883",
+      "progressBar.background": "#2f7883",
+      // "list.activeSelectionBackground": "#1265c9",
+      "panelSectionHeader.background": "#282c34",
+      "badge.background": "#d91717",
+      "badge.foreground": "#fff",
+      "notebook.selectedCellBackground": "#2f394184", // mau python cell
+      "editorLineNumber.activeForeground": "#ffe400",
+      "editor.foldPlaceholderForeground": "#808080",
+      "positronModalDialog.background": "#323842",
+      "textLink.foreground": "#B877DB", //#98c379
+
+      // Activity bar (on the left)
+      "activityBar.activeBackground": "#2f7883",
+      "activityBarBadge.background": "#d91717",
+      "activityBar.background": "#32485B",
+      "activityBar.foreground": "#FFAE00",
+      "activityBar.inactiveForeground": "#32b8c9",
+
+      // Positron configuration
+
+      "positronDataExplorer.foreground": "#0C755D",
+      "positronVariables.headerBackground": "#0C755D",
+
+      "positronVariables.foreground": "#fff",
+
+      // Terminal
+      "terminal.foreground": "#E95678",
+      "terminalCursor.foreground": "#0C755D",
+
+      // Rainbow parenthesis
+      "editorIndentGuide.activeBackground1": "#d3a263bb",
+      "editorBracketMatch.background": "#ddd84d",
+      "editorBracketHighlight.foreground1": "#ff6bcb",
+      "editorBracketHighlight.foreground2": "#FFAE00",
+      "editorBracketHighlight.foreground3": "#9a86fd",
+      "editorBracketHighlight.foreground4": "#0dcbd8",
+      "editorBracketHighlight.foreground5": "#ff00b8",
+      "editorBracketHighlight.foreground6": "#f2f50c",
+      "editorBracketPairGuide.background1": "#ff6bcb",
+      "editorBracketPairGuide.background2": "#FFAE00",
+
+      // Setting page
+      "settings.checkboxBackground": "#2f7883",
+      "settings.headerForeground": "#43b883",
+
+      // Jupyter notebook
+      "notebook.focusedCellBackground": "#39394066",
+      "notebook.cellHoverBackground": "#54545b66",
+      "notebook.focusedCellBorder": "#43b883",
+
+      // "notebook.outputContainerBackgroundColor": "#ffffff",
+      // Suggestion list in code completion
+      "editorSuggestWidget.foreground": "#32b8c9",
+      "editorSuggestWidget.highlightForeground": "#b877db",
+      "editorSuggestWidget.focusHighlightForeground": "#FFB86C",
+      "editorSuggestWidget.selectedForeground": "#43b883",
+      "editorSuggestWidget.selectedIconForeground": "#43b883",
+      "editor.selectionBackground": "#98453a"
+    }
+  },
+  "window.zoomLevel": -0.4,
+
+  //------------------------------------- Editor settings
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 13,
+  "editor.defaultColorDecorators": "auto",
+  "editor.cursorBlinking": "expand",
+  "errorLens.delay": 250,
+  "errorLens.fontFamily": "Operator Mono Lig",
+  "errorLens.fontStyleItalic": true,
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+  "errorLens.gutterIconSet": "borderless",
+  "errorLens.excludeByMessage": ["No symbol named"],
+  "errorLens.gutterIconsEnabled": true,
+  // "errorLens.messageTemplate": "$severity [1/$count] $message [$source] <$code>",
+  // "errorLens.severityText": [
+  //   "🔥 ",
+  //   "⚠️ ",
+  //   "🔷 ",
+  //   "💡 "
+  // ],
+
+  "editor.rulers": [80, 120],
+  "editor.semanticHighlighting.enabled": true,
+  // Customizing IntelliSense
+
+  // Controls if quick suggestions should show up while typing
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+  "editor.acceptSuggestionOnEnter": "on",
+  // Controls the delay in ms after which quick suggestions will show up.
+  "editor.quickSuggestionsDelay": 10,
+  // Controls if suggestions should automatically show up when typing trigger characters
+  "editor.suggestOnTriggerCharacters": true,
+  // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+  "editor.tabCompletion": "on",
+  // Controls whether sorting favours words that appear close to the cursor
+  "editor.suggest.localityBonus": true,
+  // Controls how suggestions are pre-selected when showing the suggest list
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  // Enable parameter hints
+  "editor.parameterHints.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.snippetSuggestions": "inline",
+  "editor.experimental.treeSitterTelemetry": true,
+  "editor.wordWrap": "on",
+  "editor.experimental.preferTreeSitter.css": true,
+  "markdown.extension.theming.decoration.renderLink": true,
+  "markdown.extension.theming.decoration.renderParagraph": true,
+  "markdown.extension.theming.decoration.renderHardLineBreak": true,
+  "markdown.extension.completion.enabled": true,
+  "markdown.extension.syntax.plainTheme": true,
+  "color-highlight.matchWords": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": true,
+  "editor.minimap.size": "fill",
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.showSlider": "always",
+  "debug.console.fontSize": 13,
+  "chat.editor.fontSize": 13,
+  "inlineChat.enableV2": true,
+  "markdown.preview.fontSize": 13,
+  // "color-highlight.matchRgbWithNoFunction": true,
+  // Syntax highlighting
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["entity.name.namespace"],
+        "settings": { "foreground": "#e5c07b" } //, "fontStyle": "italic"
+      },
+      {
+        "scope": ["support.namespace.r"],
+        "settings": { "foreground": "#e5c07b" } //, "fontStyle": "italic"
+      },
+      {
+        "scope": ["meta.function.definition variable.parameter"],
+        "settings": { "foreground": "#9ECBFF" } //, "fontStyle": "italic"
+      },
+      {
+        "scope": ["variable.object.dollar"],
+        "settings": { "foreground": "#e5c07b" }
+      },
+      {
+        "scope": ["variable.property.dollar"],
+        "settings": { "foreground": "#c586c0", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["string.quoted.backtick.r"],
+        "settings": { "foreground": "#c586c0", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["support.function.r"],
+        "settings": { "foreground": "#2bbac5", "fontStyle": "bold" }
+      },
+      {
+        "scope": ["keyword.operator.accessor.r"],
+        "settings": { "foreground": "#e2b241", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["meta.function.python"], // pd.DataFrame only
+        "settings": { "foreground": "#e5c07b", "fontStyle": "italic" }
+      },
+
+      {
+        "scope": ["source.r keyword", "punctuation.accessor.colons.r"],
+        "settings": { "foreground": "#C678DD", "fontStyle": "italic bold" }
+      },
+
+      {
+        "scope": ["constant.numeric"],
+        "settings": { "foreground": "#bd93f9" }
+      },
+
+      {
+        "scope": ["source.r string.quoted.single"],
+        "settings": { "foreground": "#c586c0" }
+      },
+
+      // YAML tag in .yaml file
+      {
+        "scope": ["entity.name.tag.yaml"],
+        "settings": { "foreground": "#bd93f9", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["string.quoted.single.yaml"],
+        "settings": { "foreground": "#D19A66", "fontStyle": "bold" }
+      },
+
+      // TRUE/FALSE in YAML header Rmarkdown
+      {
+        "scope": ["constant.language.boolean.yaml"],
+        "settings": { "foreground": "#43b883", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["string.unquoted.plain.out.yaml"],
+        "settings": { "foreground": "#63cfbe" }
+      },
+
+      {
+        "scope": ["punctuation.separator.key-value.mapping.yaml"],
+        "settings": { "foreground": "#19b6d8", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["markup.heading.markdown entity.name.section.markdown"],
+        "settings": { "foreground": "#E06C75", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": [
+          "markup.heading.markdown punctuation.definition.heading.markdown"
+        ],
+        "settings": { "foreground": "#E06C75", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["markup.inline.raw.string.markdown"],
+        "settings": { "foreground": "#D19A66", "fontStyle": "italic" }
+      },
+
+      {
+        "scope": ["keyword.operator.infix"],
+        "settings": { "foreground": "#28c076", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["entity.name.tag.sphinx"],
+        "settings": { "foreground": "#bd93f9", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["entity.name.tag.value.sphinx"],
+        "settings": { "foreground": "#19b6d8", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["string.quoted.docstring.multi.python"],
+        "settings": { "foreground": "#059384", "fontStyle": "italic" }
+      },
+
+      {
+        "scope": ["keyword.operator.unpacking.parameter.python"],
+        "settings": { "foreground": "#45b27d", "fontStyle": "italic bold" }
+      },
+
+      {
+        "scope": ["keyword.operator"],
+        "settings": { "foreground": "#56B6C2" }
+      },
+
+      { "scope": ["entity.name.tag"], "settings": { "foreground": "#E06C75" } },
+
+      {
+        "scope": [
+          "source.r variable.parameter",
+          "source.r meta.function-call.r variable.parameter",
+          "meta.embedded.block.r variable.parameter"
+        ],
+        "settings": { "foreground": "#e6ada8" }
+      },
+
+      {
+        "scope": ["source.r constant.other", "source.python"],
+        "settings": { "foreground": "#E06C75" }
+      },
+      {
+        "scope": ["meta.embedded.block.r constant.other"],
+        "settings": { "foreground": "#E06C75" }
+      },
+
+      {
+        "scope": ["constant.other.keyword.operator"],
+        "settings": { "foreground": "#45b27d" }
+      },
+
+      {
+        "scope": ["markup.underline"],
+        "settings": { "foreground": "#2982ef", "fontStyle": "italic bold" }
+      },
+
+      {
+        "scope": ["markup.inline.raw.string.quarto"],
+        "settings": { "foreground": "#61AFEF", "fontStyle": "italic" }
+      },
+
+      {
+        "scope": ["punctuation.definition.list.begin.markdown"],
+        "settings": { "foreground": "#bd93f9", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["storage.type.function.python"],
+        "settings": { "fontStyle": "italic" }
+      },
+
+      {
+        "scope": ["entity.name.section"],
+        "settings": { "foreground": "#e2b241", "fontStyle": "bold" }
+      },
+
+      {
+        "scope": ["markup.heading punctuation.definition.heading"],
+        "settings": { "foreground": "#e2b241", "fontStyle": "bold" }
+      },
+
+      // function in R
+      { "scope": ["variable.function.r"], "settings": { "fontStyle": "bold" } },
+      // chunk name in Rmarkdown & Quarto
+      {
+        "scope": ["meta.embedded.block.r"],
+        "settings": { "foreground": "#bd93f9" }
+      },
+      {
+        "scope": ["constant.language"],
+        "settings": { "foreground": "#43b883", "fontStyle": "bold" }
+      },
+      {
+        "scope": ["fenced_code.block.language.markdown"],
+        "settings": { "foreground": "#43b883", "fontStyle": "italic bold" }
+      },
+      {
+        "scope": ["fenced_code.block.language.attributes.markdown"],
+        "settings": { "foreground": "#e2b241", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["markup.fenced_code.block.markdown"],
+        "settings": { "foreground": "#e2b241" }
+      },
+      {
+        "scope": [
+          "entity.name.section.markdown",
+          "punctuation.definition.heading.markdown"
+        ],
+        "settings": { "foreground": "#19b6d8", "fontStyle": "bold" }
+      },
+      {
+        "scope": ["meta.embedded.block.python"],
+        "settings": { "foreground": "#e06c75" }
+      },
+      {
+        "scope": ["meta.function-call.generic.python"],
+        "settings": { "fontStyle": "bold" }
+      },
+      {
+        "scope": ["variable.parameter.function-call.python"],
+        "settings": { "foreground": "#e6ada8" } //b0dddb
+      },
+      {
+        "scope": [
+          "query.variable.parameter.function-call.python",
+          "entity.name.key.python"
+        ],
+        "settings": { "foreground": "#C586C0", "fontStyle": "italic" } //b0dddb
+      },
+      {
+        "scope": ["variable.parameter.function.language.python"],
+        "settings": { "foreground": "#9ECBFF" }
+      },
+      {
+        "scope": ["constant.other.caps.python"],
+        "settings": { "foreground": "#4fc1ff" }
+      },
+      {
+        "scope": ["punctuation.separator.annotation.result.python"],
+        "settings": { "foreground": "#27d796" }
+      },
+      {
+        "scope": [
+          "meta.item-access.arguments.python string.quoted.single.python",
+          "meta.item-access.arguments.python string.quoted.single.python punctuation.definition.string.begin.python",
+          "meta.item-access.arguments.python string.quoted.single.python punctuation.definition.string.end.python",
+          "meta.attribute.python"
+        ],
+        "settings": { "foreground": "#C586C0" } //34aa93
+      },
+      {
+        "scope": [
+          "string.quoted.docstring.single.python",
+          "string.quoted.docstring.single.python punctuation.definition.string.begin.python",
+          "string.quoted.docstring.single.python punctuation.definition.string.end.python",
+          "meta.function-call.arguments.python string.quoted.single.python",
+          "meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.begin.python",
+          "meta.function-call.arguments.python string.quoted.single.python punctuation.definition.string.end.python"
+        ],
+        "settings": { "foreground": "#85C0DF" } //34aa93
+      },
+      {
+        "scope": [
+          "punctuation.definition.string.begin.python",
+          "punctuation.definition.string.end.python"
+        ],
+        "settings": { "foreground": "#98C379" } //34aa93
+      },
+      {
+        "scope": [
+          "string.quoted.multi.python punctuation.definition.string.begin.python",
+          "string.quoted.multi.python punctuation.definition.string.end.python",
+          "string.quoted.multi.python",
+          "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+          "string.quoted.docstring.multi.python punctuation.definition.string.end.python"
+        ],
+        "settings": { "foreground": "#07a394" }
+      },
+      {
+        "scope": [
+          "entity.name.type.class.python",
+          "variable.parameter.function.language.special.self.python",
+          "variable.language.special.self.python"
+        ],
+        "settings": { "foreground": "#bd93f9", "fontStyle": "italic bold" }
+      },
+      // {
+      //   "scope": ["meta.attribute.python"],
+      //   "settings": { "foreground": "#85c0df" }
+      // },
+      {
+        "scope": ["support.type.property-name.toml"],
+        "settings": { "foreground": "#e2b241", "fontStyle": "bold" }
+      },
+      {
+        "scope": ["support.type.property-name.table.toml"],
+        "settings": { "foreground": "#bd93f9", "fontStyle": "italic bold" }
+      },
+      {
+        "scope": ["support.type.property-name.array.toml"],
+        "settings": { "foreground": "#bd93f9", "fontStyle": "italic bold" }
+      },
+      {
+        "scope": ["meta.array.toml string.quoted.single.basic.line.toml"],
+        "settings": { "foreground": "#e06c75" }
+      },
+      {
+        "scope": [
+          "meta.footnote.inline.quarto",
+          "meta.footnote.reference.quarto",
+          "meta.footnote.definition.quarto"
+        ],
+        "settings": { "foreground": "#c586c0", "fontStyle": "italic" }
+      }
+    ]
+  },
+
+  "editor.semanticTokenColorCustomizations": {
+    "[One Dark Pro Flat]": {
+      "enabled": true,
+      "rules": {
+        // different color for all constants
+        "property.readonly": "#712eee",
+        // make all symbol declarations bold and italic
+        "variable.declaration": { "italic": true, "foreground": "#C6D0F5" }, //"bold": true, d0896c
+        "variable.builtin": { "foreground": "#2bbac5" }, //"bold":
+        "variable.defaultLibrary": "#2bbac5",
+        "variable": {
+          "italic": false,
+          "foreground": "#e06c75"
+        }, //"bold": true, d0896c
+        "function.builtin": {
+          "italic": true,
+          "foreground": "#2bbac5", //63cfbe
+          "bold": true
+        },
+        "function.defaultLibrary": {
+          "italic": true,
+          "foreground": "#2bbac5", //63cfbe
+          "bold": true
+        },
+        "method.builtin": {
+          "italic": true,
+          "foreground": "#2bbac5",
+          "bold": true
+        }, //"bold": true,
+        "method.defaultLibrary": {
+          "italic": true,
+          "foreground": "#2bbac5",
+          "bold": true
+        }, //"bold": true,
+        "class.builtin": {
+          "italic": true,
+          "foreground": "#2bbac5",
+          "bold": true
+        }, //"bold": true,
+
+        "class.defaultLibrary": {
+          "italic": true,
+          "foreground": "#2bbac5",
+          "bold": true
+        },
+        "variable.readonly": "#51a3c4",
+        "class": { "italic": true, "foreground": "#bd93f9", "bold": true },
+        "property": "#85c0df",
+        "field": "#9cdcfe",
+        "selfParameter": "#bd93f9",
+        "selfParameter.declaration": "#bd93f9",
+        "local": "#b0dddb",
+        "parameter": { "italic": true, "foreground": "#b0dddb" }, // b0dddb e09668
+        // "parameter.declaration": { "italic": true, "foreground": "#9ECBFF" }, //
+        "parameter.definition": { "italic": true, "foreground": "#e6ada8" }, //
+        "tomlArrayKey": "#43b883",
+        // "*.typeHint": "#ffe300",
+        // ---
+        "number": "#AE81FF",
+        "enumMember": "#4FC1FF",
+        "string": "#CE9178"
+        // ---
+      }
+    }
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.maxComputationTime": 0,
+
+  //------------------------------------- Data tools
+  "dataExplorer.convertToCode": true,
+  "dataExplorer.summaryPanelEnhancements": true,
+  "dataWrangler.experiments.copilot.enabled": true,
+  "dataWrangler.experiments.autoDetectCsvDelimiter": true,
+  "dataWrangler.experiments.datatypes.pyspark": true,
+  "dataWrangler.experiments.fastCsvParsing": true,
+  "dataWrangler.startInEditModeForNotebookEntrypoints": true,
+  "dataWrangler.useRelativePath": true,
+  "dataWrangler.outputRenderer.columnInsights.displayByDefault": true,
+  "dataWrangler.outputRenderer.enabled": true,
+  "dataWrangler.defaultViewingFilterOptions": "advanced",
+  "dataWrangler.enabledFileTypes": {
+    "jsonl": true
+  },
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "file:/**/*.xlsx": "jupyter-data-wrangler",
+    "*.ipynb": "workbench.editor.positronNotebook"
+  },
+  "shiny.timeoutOpenBrowser": 30,
+  "positron.assistant.gitIntegration.enable": true,
+  "positron.assistant.showTokenUsage.enable": true,
+  "positron.assistant.toolDetails.enable": true,
+  "positron.assistant.copilot.enable": true,
+  "positron.assistant.enable": true,
+  "positron.assistant.enabledProviders": [
+    "anthropic",
+    "azure",
+    "bedrock",
+    "google",
+    "mistral",
+    "ollama",
+    "openai",
+    "openrouter"
+  ],
+  "chat.useCopilotParticipantsWithOtherProviders": true,
+  "databot.researchPreviewAcknowledgment": "Acknowledged",
+
+  //------------------------------------- R settings
+  "files.associations": {
+    "*.rmd": "quarto",
+    "renv.lock": "json"
+  },
+  "[r]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Posit.air-vscode",
+    "interpreters.startupBehavior": "auto"
+  },
+  "positron.r.pipe": "%>%",
+  "quartoWizard.ask.trustAuthors": "never",
+  "positron.reticulate.enabled": "always",
+  "positron.viewer.interactivePlotsInViewer": true,
+  "plots.darkFilter": "off",
+  "kernelSupervisor.connectionTimeout": 60,
+  "shiny.previewType": "external",
+  "positron.r.interpreters.default": "",
+  "positron.r.workspaceSymbols.includeCommentSections": true,
+  "positron-r-package-manager.showRIcon": true,
+  //------------------------------------- Python setting
+  "python.interpreter.infoVisibility": "onPythonRelated",
+  "python.useBundledIpykernel": false,
+  "python.terminal.launchArgs": ["-m", "IPython", "--no-autoindent"],
+  "python.terminal.activateEnvironment": false,
+  "python.defaultInterpreterPath": "C:/Program Files/Python312/python.exe",
+  "python.autoComplete.extraPaths": ["typings"],
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.cacheLSPData": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.supportRestructuredText": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.extraPaths": ["typings"],
+  "python.languageServer": "Pylance",
+  "python-envs.terminal.autoActivationType": "shellStartup",
+  "python.locator": "native",
+  "inlinePythonPackageInstaller.customPipCommand": "uv add",
+  "python.createEnvironment.contentButton": "show",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.rulers": [80],
+    "editor.tabSize": 4
+  },
+
+  // Ruff preconfiguration
+  "ruff.organizeImports": true,
+  "ruff.fixAll": true,
+  "ty.experimental.rename": true,
+  "marimo.marimoPath": "",
+  "marimo.pythonPath": "C:/Program Files/Python312/python.exe",
+  //------------------------------------- Quarto and Jupyter notebook setting
+  // Quarto
+  "[quarto]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "quarto.quarto",
+    "editor.wordWrap": "off",
+    "editor.guides.bracketPairs": "active",
+    "editor.language.brackets": [["::::", ":::"]],
+    "editor.language.colorizedBracketPairs": [["::::", ":::"]]
+  },
+  "files.watcherExclude": {
+    "**/.quarto/**": true
+  },
+  "search.exclude": {
+    "*/.quarto": true
+  },
+  "interactiveWindow.executeWithShiftEnter": false,
+  "quarto.render.renderOnSave": true,
+  "quarto.visualEditor.fontFamily": "JetBrains Mono",
+  "quarto.cells.background.darkDefault": "#2f394184",
+
+  // Jupyter Notebook
+  "jupyter.enableExtendedPythonKernelCompletions": true,
+  "jupyter.interactiveWindow.notebookRepl": true,
+  "jupyter.executionAnalysis.enabled": true,
+  "ipynb.experimental.serialization": true,
+  "positron.assistant.notebookMode.enable": true,
+  "positron.assistant.notebookSuggestions.model": [
+    "Claude Sonnet 4.5",
+    "GPT-5"
+  ],
+  "console.showNotebookConsoleActions": true,
+  "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
+  "github.copilot.chat.notebook.followCellExecution.enabled": true,
+  "notebook.stickyScroll.enabled": true,
+  "notebook.variablesView": true,
+  "notebook.output.minimalErrorRendering": true,
+  "notebook.experimental.generate": true,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.consolidatedRunButton": true,
+  "notebook.formatOnCellExecution": true,
+  "notebook.lineNumbers": "on",
+  "notebook.outline.showCodeCells": true,
+  "notebook.experimental.showExecutionInfo": true,
+  "inlineChat.notebookAgent": true,
+  "positron.notebook.enabled": true,
+
+  //------------------------------------- Terminal settings
+
+  "console.fontSize": 13,
+  "console.fontLigatures": true,
+  "console.fontFamily": "'Jetbrains Mono', Consolas, 'Courier New', monospace",
+  "console.showNotebookConsoles": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "terminal.integrated.rightClickBehavior": "default",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  },
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "debug.console.fontFamily": "Default",
+  //------------------------------------- Other settings
+  "git.autofetch": true,
+
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "sync.gist": "d143c1d5223490f30c58c4af503bfdfd",
+
+  // Icon customization
+  "material-icon-theme.files.associations": {
+    // R icon
+    "*.Rproj": "../../icons/rstudio1",
+    "*.r": "../../icons/rmarkdownnew", //rpurenew1
+    ".Rhistory": "../../icons/rconfig",
+    ".renvignore": "git",
+    ".Renviron": "../../icons/rconfig", //vite
+    ".Rprofile": "../../icons/rconfig",
+    "air.toml": "../../icons/rconfig",
+    "DESCRIPTION": "../../icons/rconfig",
+    ".Rbuildignore": "../../icons/rconfig",
+    "app.R": "../../icons/quasar",
+    "*.rds": "../../icons/rdata",
+    "*.RData": "../../icons/rdata",
+    "*.rmd": "../../icons/quarto", //rstudio1
+    "*.qmd": "../../icons/quarto", //quasar
+    "_quarto.yml": "../../icons/flux", //quartoyml
+    "myst.yml": "../../icons/flux1",
+    "article.md": "../../icons/quasar",
+    "index.md": "../../icons/quasar",
+
+    // Other files
+    "*.json": "../../icons/node",
+    "*.bib": "../../icons/bibtex",
+    "*.csv": "../../icons/csv",
+    "*.tsv": "../../icons/csv",
+    "*.xlsx": "../../icons/excel",
+    "*.docx": "../../icons/word",
+    "*.pptx": "../../icons/powerpoint",
+    "*.sql": "../../icons/sql",
+    "*.sqlite": "../../icons/sqlite",
+    "*.svg": "../../icons/image",
+    "*.dta": "../../icons/stata",
+    // Python icon
+    "*.ipynb": "../../icons/anaconda", //anaconda jupyterluong notebook2 nbluong3
+    "pyproject.toml": "../../icons/poetry",
+    ".python-version": "../../icons/pythonversion",
+    "requirements.txt": "../../icons/pypi",
+    "requirements-dev.txt": "../../icons/pypi",
+    "__init__.py": "../../icons/pythonconfig1"
+  },
+  "material-icon-theme.folders.associations": {
+    "_freeze": "packages",
+    ".quarto": "quasar",
+    "venv": "environment",
+    "renv": "environment",
+    "references": "docs",
+    "modeling": "generator",
+    "handbook": "markdown"
+  },
+
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "renv",
+      "base": "environment",
+      "color": "#497CE3",
+      "lightColor": "#497CE3",
+      "folderNames": ["renv"]
+    },
+    {
+      "name": ".venv",
+      "base": "environment",
+      "color": "#22c893",
+      "lightColor": "#22c893",
+      "folderNames": [".venv"]
+    },
+    {
+      "name": "r-lib",
+      "base": "lib",
+      "color": "#497CE3",
+      "lightColor": "#497CE3",
+      "folderNames": ["library"],
+      "rootFolderNames": ["renv"]
+    }
+  ],
+
+  "material-icon-theme.files.customClones": [
+    {
+      "name": "python-mod",
+      "base": "python",
+      "color": "#22c893", // #498BA7
+      "fileExtensions": ["py"]
+    },
+    {
+      "name": "renv-mod",
+      "base": "lock",
+      "color": "#497CE3",
+      "fileNames": ["renv.lock"]
+    }
+  ],
+
+  "githubPullRequests.experimental.notificationsView": true,
+  "githubPullRequests.experimental.useQuickChat": true,
+  "git.openAfterClone": "always",
+  "githubPullRequests.experimental.chat": true,
+  "gitlens.graph.experimental.renderer.enabled": true,
+  "github.copilot.selectedCompletionModel": "advanced",
+  "github.copilot.enable": {
+    "quarto": true
+  },
+  "git.replaceTagsWhenPull": true,
+  "git.enableSmartCommit": true,
+  "githubLocalActions.dockerDesktopPath": "C:/Program Files/Docker/Docker/Docker Desktop.exe",
+  "gitlens.advanced.messages": {
+    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true,
+    "suppressIntegrationRequestTimedOutWarning": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "git.confirmSync": false,
+
+  "highlight.regexes": {
+    // "(\\bimport\\s+(?:\\w+(?:\\.\\w+)*(?:\\s*,\\s*)?)+|\\bfrom\\s+\\w+(?:\\.\\w+)*\\s+import\\s+(?:\\w+(?:\\s*,\\s*)?)+|\\bas\\s+\\w+)": {
+    //   "regexFlags": "g",
+    //   "filterLanguageRegex": ".*",
+    //   "filterFileRegex": "\\.qmd$",
+    //   "decorations": [{ "color": "#e5c07b" }]
+    // },
+    "^(#{1,6}\\s+.*?)\\s*[-–—]{5,}\\s*$": {
+      "regexFlags": "gm",
+      "captureGroup": 1,
+      "decorations": [
+        {
+          "backgroundColor": "#98453a80",
+          "color": "#fa973a"
+          // "fontWeight": "bold"
+        }
+      ]
+    },
+    "(//-+\\s*.*)": {
+      "regexFlags": "g",
+      "decorations": [
+        {
+          "backgroundColor": "#32b8c9",
+          "color": "#000000"
+        }
+      ]
+    },
+
+    "(#\\s*\\|\\s*[^:]+:)": {
+      // This regex matches comments starting with #|
+      "regexFlags": "g", // Global flag to match all instances
+      "filterLanguageRegex": ".*", // Apply to all languages
+      "filterFileRegex": ".*", // Apply to all files
+      "decorations": [
+        // Decoration options to apply to the capturing groups
+        { "color": "#b38c31" } // Decoration options to apply to the entire comment starting with #|
+      ]
+    },
+
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          // "backgroundColor": "#ffcc00",
+          "color": "#ffcc00",
+          // "fontWeight": "bold"
+          "fontStyle": "italic"
+        },
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontStyle": "italic"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|FIXME|FIX|BUG|UGLY|DEBUG|HACK|%%)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#32b8c9",
+          "backgroundColor": "#32b8c9",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#32b8c9",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:OPTIMIZE|TSC|NOTE)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      /* including code cell decoration */
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          // "backgroundColor": "#AE81FF",
+          "backgroundColor": "#AE81FF",
+          "color": "#ffffff",
+          "fontWeight": "bold",
+          "fontStyle": "italic"
+        },
+        {
+          // "backgroundColor": "#AE81FF",
+          "color": "#AE81FF",
+          "fontStyle": "italic"
+        }
+      ]
+    }
+  },
+
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "REVIEW",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.filtering.excludeGlobs": [
+    //ignore file start with .vdoc
+    "**/.vdoc/**"
+  ],
+  "redhat.telemetry.enabled": false,
+  "todo-tree.general.showActivityBarBadge": true,
+  "todo-tree.general.statusBar": "current file",
+  "todo-tree.highlights.useColourScheme": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+  "todo-tree.tree.showCountsInTree": true,
+  "positron.assistant.alwaysIncludeCopilotTools": true,
+  "positronPythonPackageManager.enableVersionDecorations": true,
+  "python.pyrefly.displayTypeErrors": "force-on",
+  "inlinePythonPackageInstaller.autoInstall": true,
+  "missingPackageInstaller.customPipCommand": "pip install",
+  "positron-python-package-manager.customImportCommands": {
+    "pandas": "import pandas as pd",
+    "numpy": "import numpy as np"
+  },
+  "catalogExplorer.enabled": true,
+  "positron.r.useNativePipe": true,
+  "positron-r-package-manager.showIcons": true,
+  "diffEditor.codeLens": true,
+  "python.analysis.addHoverSummaries": true,
+  "python.analysis.enableTroubleshootMissingImports": true,
+  "python.analysis.supportDocstringTemplate": true,
+  "python.analysis.aiHoverSummaries": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.generateWithTypeAnnotation": true,
+  "python.analysis.languageServerMode": "full",
+  "rdsViewer.rPath": "C:\\Program Files\\R\\R-4.5.1\\bin\\R.exe",
+  "workbench.colorTheme": "One Dark Pro Flat"
+}
